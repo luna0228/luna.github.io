@@ -56,7 +56,7 @@ Sometimes these are just `.scss` files, and the markup is written within a conte
 
 Some components have a `.html` file, which uses Nunjucks macros to define reusable components. For example, `Block` has several variations that can be toggled through its component API. Once a `Block` is imported into a view, you can render using:
 
-`{{ Block.render('one', {index: 1, draggable: true}) }}`
+
 
 That will render all of the markup for a `Block` component, using the string `one` as its `Heading`, and appending the classes `Block--item1` and `Block--isDraggable`.
 
