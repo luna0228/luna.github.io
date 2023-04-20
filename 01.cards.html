@@ -1,0 +1,250 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hey! 卡俗</title>
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+  <!-- KYART CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="nav glass-shadow glass-bg">
+        <a href="javascript:history.back()" class="goback round-btn">
+          <div class="icon glass-shadow glass-bg">
+            <img src="assets/img/icon/arrow-l.svg">
+          </div>
+        </a>
+        <h3 class="title-style">卡片管理</h3>
+        <a data-toggle="modal" data-target="#search-modal" class="sreach-box">
+          <div class="icon">
+            <img src="assets/img/icon/search.svg">
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="container">
+        <div class="Ccard-item glass-shadow glass-bg mt-30 mb-30">
+          <div class="card-info">
+            <h3 class="card-publish text-right">VISA</h3>
+            <h4>台新銀行</h4>
+            <h3 class="text-lmt">GOGO悠遊御璽卡</h3>
+
+            <p class="card-type txt-gray mt-10">御璽卡</p>
+          </div>
+          <a data-toggle="modal" data-target="#delete-modal" class="delete-box glass-shadow glass-bg">
+            <div class="icon">
+              <img src="assets/img/icon/cancel.svg">
+            </div>
+          </a>
+        </div>
+        <div class="Ccard-item glass-shadow glass-bg mt-30 mb-30">
+          <div class="card-info">
+            <h3 class="card-publish text-right">VISA</h3>
+            <h4>中國信託銀行</h4>
+            <h3 class="text-lmt">簽帳金融卡/悠遊Debit卡</h3>
+
+            <p class="card-type txt-gray mt-10">金融卡</p>
+          </div>
+          <a data-toggle="modal" data-target="#delete-modal" class="delete-box glass-shadow glass-bg">
+            <div class="icon">
+              <img src="assets/img/icon/cancel.svg">
+            </div>
+          </a>
+        </div>
+        <div class="Ccard-item glass-shadow glass-bg mt-30 mb-80">
+          <div class="card-info">
+            <h3 class="card-publish text-right">VISA</h3>
+            <h4>中國信託銀行</h4>
+            <h3 class="text-lmt">簽帳金融卡/悠遊Debit卡</h3>
+
+            <p class="card-type txt-gray mt-10">金融卡</p>
+          </div>
+          <a data-toggle="modal" data-target="#delete-modal" class="delete-box glass-shadow glass-bg">
+            <div class="icon">
+              <img src="assets/img/icon/cancel.svg">
+            </div>
+          </a>
+        </div>
+        <div class="panel search-panel fixed-panel insert-card glass-shadow glass-bg mt-20 mb-20">
+          <a href="" class="panel-control">
+            <img src="assets/img/panel-control.png">
+          </a>
+          <h3 class="title-style">新增卡片</h3>
+          <div class="input-row">
+            <div class="input-item">
+              <label for="bank">銀行</label>
+              <select class="form-control" id="bank">
+                <option selected>台新銀行</option>
+                <option>中國信託</option>
+                <option>台灣銀行</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-item">
+              <label for="publish">發卡機構</label>
+              <select class="form-control" id="publish">
+                <option selected>VISA</option>
+                <option>JCB</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-item">
+              <label for="card-name">卡名</label>
+              <select class="form-control" id="card-name">
+                <option>GOGO悠遊御璽卡</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-item">
+              <label for="card-lv">級別</label>
+              <select class="form-control" id="card-lv">
+                <option>御璽卡</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn-bar mt-20 ">
+            <a href="#" class="btn btn-basic">
+              <span>增加</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <footer>
+      <div class="bottom-nav glass-shadow glass-bg">
+        <ul class="nav-list">
+          <li>
+            <a href="01.liked.html">
+              <img src="assets/img/icon/heart.png">
+              <p>我的最愛</p>
+            </a>
+          </li>
+          <li>
+            <a href="01.nearby.html">
+              <img src="assets/img/icon/location.png">
+              <p>附近優惠</p>
+            </a>
+          </li>
+          <li>
+            <a href="01.account.html">
+              <img src="assets/img/icon/info.png">
+              <p>個人資料</p>
+            </a>
+          </li>
+          <li>
+            <a href="01.setting.html">
+              <img src="assets/img/icon/setting.png">
+              <p>通知設定</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="fixed-btn ">
+      <a href="01.cards.html" class="small-shadow">
+        <img src="assets/img/icon/card.png">
+      </a>
+    </div>
+
+  </div>
+  <!-- Modal -->
+  <div class="modal fade modal-style" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content glass-shadow glass-bg">
+        <div class="modal-header">
+          <h3 class="modal-title title-style">查詢優惠</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="assets/img/icon/cancel.svg">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="search-bar">
+            <div class="input-group">
+              <label class="hidden" for="search">查詢優惠</label>
+              <input type="text" class="form-control" id="search">
+              <div class="input-group-append">
+                <button class="btn" type="submit" title="搜尋"> <img src="assets/img/icon/search.svg"></button>
+              </div>
+            </div>
+          </div>
+          <div class="btn-bar mt-30 mb-30">
+            <a href="search_result.html" class="btn btn-basic">
+              <span>搜尋</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-style" id="delete-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content glass-shadow glass-bg">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="assets/img/icon/cancel.svg">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">確定要刪除此項目嗎？</p>
+          <div class="btn-bar mt-30 mb-30">
+            <a href="" class="btn btn-basic" data-dismiss="modal" aria-label="Close">
+              <span>確定</span>
+            </a>
+            <a href="javascript:void(0)" class="btn btn-basic-line" data-dismiss="modal" aria-label="Close">
+              <span>
+                取消
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="assets/plugins/bootstrap-4.2.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/ui_setting.js"></script>
+  <!-- END JS -->
+  <script>
+    $(function () {
+
+      if ($('.panel-control').length > 0)
+        $('.panel-control').on('click', function (event) {
+          event.preventDefault();
+          $(this).parents('.insert-card').toggleClass('open');
+          $(this).parents('body').toggleClass('open-panel');
+        });
+    });
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

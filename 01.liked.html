@@ -1,0 +1,235 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hey! 卡俗</title>
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+  <!-- KYART CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="nav glass-shadow glass-bg">
+        <a href="javascript:history.back()" class="goback round-btn">
+          <div class="icon glass-shadow glass-bg">
+            <img src="assets/img/icon/arrow-l.svg">
+          </div>
+        </a>
+        <h3 class="title-style">我的最愛</h3>
+        <a data-toggle="modal" data-target="#search-modal" class="sreach-box">
+          <div class="icon">
+            <img src="assets/img/icon/search.svg">
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="container">
+        <div class="panel search-panel glass-shadow glass-bg mt-20 mb-20">
+          <div class="input-row">
+            <div class="input-item">
+              <label for="bank">銀行</label>
+              <select class="form-control" id="bank">
+                <option selected>台新</option>
+                <option>中信</option>
+                <option>台銀</option>
+              </select>
+            </div>
+            <div class="input-item">
+              <label for="type">類別</label>
+              <select class="form-control" id="type">
+                <option selected>折扣</option>
+                <option>贈品</option>
+                <option>紅利</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-item">
+              <label for="order">排序方式</label>
+              <select class="form-control" id="order">
+                <option>依新舊</option>
+                <option selected>依距離順序</option>
+                <option>依重視程度</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="discount-container">
+          <div class="card-item glass-shadow glass-bg mt-30 mb-30">
+            <div class="tags">
+              <span class="bank">台新</span>
+              <span class="kind">折扣</span>
+            </div>
+            <a href="detail.html" class="img-box glass-shadow glass-bg">
+              <img src="assets/img/03.jpg">
+            </a>
+            <div class="text-box">
+              <a href="detail.html">
+                <h3 class="text-lmt">LOUISA COFFEE仁愛敦化店享95折</h3>
+              </a>
+              <p class="date txt-gray">2022-12-02~2023-02-28</p>
+              <p class="describe text-lmt">於【LOUISA COFFEE 仁愛敦化店】消費，刷台新信用卡/VISA金融卡享全品項95折優惠</p>
+              <span class="distance txt-gray">15m</span>
+              <div class="like liked"><span class="icon"><img src="assets/img/icon/Vector.svg" class="heart-line">
+                  <img src="assets/img/icon/heart.svg" class="heart">
+                </span></div>
+            </div>
+            <a data-toggle="modal" data-target="#delete-modal" class="delete-box glass-shadow glass-bg">
+              <div class="icon">
+                <img src="assets/img/icon/cancel.svg">
+              </div>
+            </a>
+          </div>
+          <div class="card-item glass-shadow glass-bg mt-30 mb-30">
+            <div class="tags">
+              <span class="bank">台新</span>
+              <span class="kind">贈品</span>
+            </div>
+            <a href="detail.html" class="img-box glass-shadow glass-bg">
+              <img src="assets/img/01.jpg">
+            </a>
+            <div class="text-box">
+              <a href="detail.html">
+                <h3 class="text-lmt">涓豆腐消費贈「黃金酥炸嫩豆腐」乙份</h3>
+              </a>
+              <p class="date txt-gray">2022-12-02~2023-02-28</p>
+              <p class="describe text-lmt">涓豆腐 享用道地韓味及創意料理，刷台新 再贈「黃金酥炸嫩豆腐」</p>
+              <span class="distance txt-gray">200m</span>
+              <div class="like liked"><span class="icon"><img src="assets/img/icon/Vector.svg" class="heart-line">
+                  <img src="assets/img/icon/heart.svg" class="heart">
+                </span></div>
+            </div>
+            <a data-toggle="modal" data-target="#delete-modal" class="delete-box glass-shadow glass-bg">
+              <div class="icon">
+                <img src="assets/img/icon/cancel.svg">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <div class="bottom-nav glass-shadow glass-bg">
+        <ul class="nav-list">
+          <li>
+            <a href="01.liked.html">
+              <img src="assets/img/icon/heart.png">
+              <p>我的最愛</p>
+            </a>
+          </li>
+          <li>
+            <a href="01.nearby.html">
+              <img src="assets/img/icon/location.png">
+              <p>附近優惠</p>
+            </a>
+          </li>
+          <li>
+            <a href="01.account.html">
+              <img src="assets/img/icon/info.png">
+              <p>個人資料</p>
+            </a>
+          </li>
+          <li>
+            <a href="01.setting.html">
+              <img src="assets/img/icon/setting.png">
+              <p>通知設定</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="fixed-btn ">
+      <a href="01.cards.html" class="small-shadow">
+        <img src="assets/img/icon/card.png">
+      </a>
+    </div>
+
+  </div>
+  <!-- Modal -->
+  <div class="modal fade modal-style" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content glass-shadow glass-bg">
+        <div class="modal-header">
+          <h3 class="modal-title title-style">查詢優惠</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="assets/img/icon/cancel.svg">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="search-bar">
+            <div class="input-group">
+              <label class="hidden" for="search">查詢優惠</label>
+              <input type="text" class="form-control" id="search">
+              <div class="input-group-append">
+                <button class="btn" type="submit" title="搜尋"> <img src="assets/img/icon/search.svg"></button>
+              </div>
+            </div>
+          </div>
+          <div class="btn-bar mt-30 mb-30">
+            <a href="search_result.html" class="btn btn-basic">
+              <span>搜尋</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-style" id="delete-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content glass-shadow glass-bg">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="assets/img/icon/cancel.svg">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">確定要刪除此項目嗎？</p>
+          <div class="btn-bar mt-30 mb-30">
+            <a href="" class="btn btn-basic" data-dismiss="modal" aria-label="Close">
+              <span>確定</span>
+            </a>
+            <a href="javascript:void(0)" class="btn btn-basic-line" data-dismiss="modal" aria-label="Close">
+              <span>
+                取消
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="assets/plugins/bootstrap-4.2.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/ui_setting.js"></script>
+  <!-- END JS -->
+  <script>
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

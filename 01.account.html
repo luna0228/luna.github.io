@@ -1,0 +1,231 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hey! 卡俗</title>
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+  <!-- KYART CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="nav glass-shadow glass-bg">
+        <a href="javascript:history.back()" class="goback round-btn">
+          <div class="icon glass-shadow glass-bg">
+            <img src="assets/img/icon/arrow-l.svg">
+          </div>
+        </a>
+        <h3 class="title-style">個人資料</h3>
+        <a data-toggle="modal" data-target="#search-modal" class="sreach-box">
+          <div class="icon">
+            <img src="assets/img/icon/search.svg">
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="container">
+        <div class="flex-end mt-20 mb-20">
+          <a href="01.cards.html" class="txt-blue">進入卡片管理
+            <span class="icon ml-05">
+              <img src="assets/img/icon/arrow-l-b.svg">
+            </span>
+          </a>
+        </div>
+        <div class="panel form-panel glass-shadow glass-bg mt-20 mb-20">
+          <div class="input-row">
+            <div class="input-item">
+              <h5>生理性別</h5>
+              <div class="form-check">
+                <label class="form-check-label" for="radio01">
+                  <input class="form-check-input" type="radio" name="radio-group" id="radio01" checked="">
+                  <span class="text">男</span>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" for="radio02">
+                  <input class="form-check-input" type="radio" name="radio-group" id="radio02" checked="">
+                  <span class="text">女</span>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-item">
+              <h5>生日</h5>
+              <input type="text" class="form_date form-control ">
+            </div>
+          </div>
+
+          <div class="input-item">
+            <label for="order" class="mb-10">重視程度排序</label>
+            <div class="sortable-container">
+              <ul class="sortable" id="order">
+                <li class="item">距離</li>
+                <li class="item">商家</li>
+                <li class="item">銀行類別</li>
+                <li class="item">優惠類別</li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="input-item">
+            <label for="type" class="mb-10">喜好程度排序</label>
+            <div class="sortable-container">
+              <ul class="sortable" id="type">
+                <li class="item">紅利</li>
+                <li class="item">贈品</li>
+                <li class="item">折扣</li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-bar mt-20 ">
+            <a href="index.html" class="btn btn-basic">
+              <span>確認</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <footer>
+      <div class="bottom-nav glass-shadow glass-bg">
+        <ul class="nav-list">
+          <li>
+            <a href="01.liked.html">
+              <img src="assets/img/icon/heart.png">
+              <p>我的最愛</p>
+            </a>
+          </li>
+          <li>
+            <a href="01.nearby.html">
+              <img src="assets/img/icon/location.png">
+              <p>附近優惠</p>
+            </a>
+          </li>
+          <li>
+            <a href="01.account.html">
+              <img src="assets/img/icon/info.png">
+              <p>個人資料</p>
+            </a>
+          </li>
+          <li>
+            <a href="01.setting.html">
+              <img src="assets/img/icon/setting.png">
+              <p>通知設定</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="fixed-btn ">
+      <a href="01.cards.html" class="small-shadow">
+        <img src="assets/img/icon/card.png">
+      </a>
+    </div>
+
+  </div>
+  <!-- Modal -->
+  <div class="modal fade modal-style" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content glass-shadow glass-bg">
+        <div class="modal-header">
+          <h3 class="modal-title title-style">查詢優惠</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="assets/img/icon/cancel.svg">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="search-bar">
+            <div class="input-group">
+              <label class="hidden" for="search">查詢優惠</label>
+              <input type="text" class="form-control" id="search">
+              <div class="input-group-append">
+                <button class="btn" type="submit" title="搜尋"> <img src="assets/img/icon/search.svg"></button>
+              </div>
+            </div>
+          </div>
+          <div class="btn-bar mt-30 mb-30">
+            <a href="search_result.html" class="btn btn-basic">
+              <span>搜尋</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modal-style" id="delete-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content glass-shadow glass-bg">
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="assets/img/icon/cancel.svg">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">確定要刪除此項目嗎？</p>
+          <div class="btn-bar mt-30 mb-30">
+            <a href="" class="btn btn-basic" data-dismiss="modal" aria-label="Close">
+              <span>確定</span>
+            </a>
+            <a href="javascript:void(0)" class="btn btn-basic-line" data-dismiss="modal" aria-label="Close">
+              <span>
+                取消
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="assets/plugins/bootstrap-4.2.1-dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Sortable-->
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/ui_setting.js"></script>
+  <!-- END JS -->
+  <script>
+
+    var sortable01 = document.getElementById("order");
+    new Sortable(sortable01, {
+      disabled: false, // 關閉Sortable
+      animation: 150,
+      draggable: ".item",  // 可拖曳的物件
+      ghostClass: 'sortable-ghost',// 拖曳時，給予物件的類別
+      chosenClass: "sortable-chosen",  // 選定時，給予物件的類別
+    });
+
+    var sortable02 = document.getElementById("type");
+    new Sortable(sortable02, {
+      disabled: false, // 關閉Sortable
+      animation: 150,
+      draggable: ".item",  // 可拖曳的物件
+      ghostClass: 'sortable-ghost',// 拖曳時，給予物件的類別
+      chosenClass: "sortable-chosen",  // 選定時，給予物件的類別
+    });
+
+
+  </script>
+</body>
+
+</html>
