@@ -1294,7 +1294,9 @@ svg rect {
 
 .page-content .mbImgBox .imgBox img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .page-content .link {
