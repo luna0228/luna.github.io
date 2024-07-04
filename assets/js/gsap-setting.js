@@ -122,19 +122,33 @@ aboutme.fromTo(".section-aboutme .right", { x: 100, y: 0, autoAlpha: 0 }, {
 //console.log(window.innerWidth)
 
 if (window.innerWidth > 991) {
-    var skill_W = document.querySelector(".skill-list").scrollWidth,
+    var skill1_W = document.querySelector(".skill-list1").scrollWidth,
+        skill2_W = document.querySelector(".skill-list2").scrollWidth,
         skillBox_W = document.querySelector(".skill-box").offsetWidth;
-    //console.log(skill_W - skillBox_W);
 
-    gsap.to(".skill-list", {
+    console.log(skill1_W + ',' + skill2_W + ',' + skillBox_W)
+    console.log(skill1_W - skillBox_W);
+    console.log(skill2_W - skillBox_W);
+
+    gsap.to(".skill-list1", {
         scrollTrigger: {
             trigger: ".section-skills",
             //star: "top bottom",
             //end: "bottom top",
             scrub: 5,
         },
-        x: (-(skill_W - skillBox_W))
+        x: (-(skill1_W - skillBox_W))
     });
+
+    gsap.from(".skill-list2", {
+        scrollTrigger: {
+            trigger: ".section-skills",
+            //star: "top bottom",
+            //end: "bottom top",
+            scrub: 5,
+        },
+        x: (-(skill2_W - skillBox_W))
+    })
 }
 
 
