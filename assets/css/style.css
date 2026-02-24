@@ -826,7 +826,7 @@ svg rect {
 }
 
 .banner-text {
-  max-width: 530px;
+  max-width: 550px;
   font-size: 1.25rem;
   text-align: center;
   line-height: 1.75;
@@ -904,12 +904,15 @@ svg rect {
 .about-media {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .about-media .item {
   display: flex;
   align-items: center;
   margin-right: 30px;
+  flex: auto;
+  padding-bottom: 10px;
 }
 
 .about-media .item img {
